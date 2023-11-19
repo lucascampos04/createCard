@@ -1,0 +1,84 @@
+@import '@fontsource/chewy';
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    margin-top: 30px;
+    animation: borderAnimation 1000s infinite ease;
+    border-radius: 5px;
+    gap: 30px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(85, 49, 114);
+    }
+    25% {
+        border-color: blue;
+    }
+    50% {
+        border-color: rgb(23, 0, 128);
+    }
+    75% {
+        border-color: rgb(100, 88, 122);
+    }
+    100% {
+        border-color: rgb(89, 0, 255);
+    }
+}
+
+form h2{
+    font-size: 60px;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Rowdies', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgb(27, 83, 187);
+}
+
+form .input input,
+form .input select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+label{
+    font-family: 'Chewy', cursive;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+
+.alert-danger {
+    background-color: #d9534f;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn{
+    width: 20vh;
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
+    font-weight: 900;
+}
